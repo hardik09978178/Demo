@@ -1,0 +1,111 @@
+
+@media only screen and (max-width: 1052px){
+    .logo {
+        margin: 20px 0px;
+    }
+    .logo img {
+        width: 26%;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 299px;
+        transition: all 0.3s ease-out;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+    }
+    .text-big {
+        font-size: 30px;
+        margin: 9px 0px;
+    }
+    .nav-list{
+        flex-direction: column;
+        width: 95%;
+    }
+    .right-part{
+        text-align: center;
+        width: 98%;
+    }
+    .nav-list li a{
+        font-size: 17px;
+        font-weight: normal;
+    }
+    .section {
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    .text-big {
+        text-align: center;
+    }
+    .text-small {
+        text-align: center;
+    }
+    .buttons {
+        text-align: center;
+    }
+    .secondHalf img {
+        width: 100%;
+    }
+    #search {
+        width: 25%;
+    }
+    /* .burger {
+        display: block;
+        cursor: pointer;
+    } */
+    .h-nav-resp {
+        height: 72px;
+    }
+    .visibility-resp {
+        opacity: 0;
+    }
+    .menu-btn {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu-btn-burger {
+        width: 50px;
+        height: 8px;
+        background: #fff;
+        border-radius: 4px;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu-btn-burger::before, .menu-btn-burger::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 8px;
+        background: white;
+        border-radius: 4px;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu-btn-burger::before {
+        transform: translateY(-16px);
+    }
+    .menu-btn-burger::after {
+        transform: translateY(16px);
+    }
+
+    /* Animation effect  */
+    .menu-btn.open .menu-btn-burger{
+        transform: translateX(-50px);
+        background: transparent;
+    }
+    .menu-btn.open .menu-btn-burger::before{
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+    .menu-btn.open .menu-btn-burger::after{
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+    .form {
+        max-width: 355px;
+    }
+}
